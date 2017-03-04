@@ -7,17 +7,13 @@ nav {
     height: 80px;
 }
 
-nav img {
-    height: 50px;
-}
-
 .nav > li > a {
     padding: 4px 0;
     border-bottom: 1px solid transparent;
 }
 
 .nav > li {
-    padding: 26px 20px 25px;
+    padding: 26px 10px 15px 10px;
 }
 
 nav ul li.active > a {
@@ -44,4 +40,14 @@ nav .form-group .btn {
 
 #article_title {
     margin: 45px auto 20px auto
+}
+
+#title_img {
+    display: inline;
+    height: 70px;
+    margin-right: 10px;
+}
+
+#title {
+    color: #FFFFFF;
 }
