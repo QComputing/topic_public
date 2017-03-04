@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Andrew</title>
+    <!--TODO all the metas-->
+    <meta name="description" content="An attempt to explain what Quantum Computing is about" />
+
+    <!--Pretty fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!--Our css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!--TODO refactor this section that just ease the creation-->
+    <link rel="script" href="header.js">
+</head>
+
+<script>
+    document.onload(loadNavbar());
+</script>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container"><a class="navbar-brand" href="#"><img src="img/logo.png" alt="LogoQC"></a>
+
+
+        <div class="form-group navbar-right">
+            <button onclick="buttonAction()" type="button" class="btn btn-success">Generic btn</button>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="passive"><a href="">Sample page</a></li>
+            <li class="active"><a href="">More sample</a></li>
+            <li class="active"><a href="">Again some Sampel</a></li>
+            <li class="active"><a href="">My sample</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<div id="nav_margin"></div>
+
+<!--Start SAMPLE-->
+<article id="arcticle">
+    <p>In the past 10 years substantial work has been made towards making quantum computers a reality. To achieve this, research teams across the world have been trying to find the most viable way of representing qubits, or
+    <i>quantum bits</i>, using physical phenomena. This is similar to how the binary digits 0 and 1 can be
+    represented in modern semiconductors by electricity either flowing or not flowing through the material.<br />
+    </p>
+    <br />
+    <p>
+        There are several fields of research in attempting to develop a way of representing qubits. Amongst these, the
+        four most notable are superconductivity, trapped ions, topological quantum computers, and quantum optics. Each
+        of these fields has attracted research teams hopeful that they can develop a way of using that phenomena to
+        produce a quantum computer, and trying to produce the hardware needed for these a computer built by these means.
+        Here we will discuss what some of these requirements are, the differences between these four main approaches for
+        representing qubits, and the prospect that each of them has for being used in future quantum computers.<br />
+    </p>
+    <br />
+    <h1>Superconducting Quantum Computing</h1>
+    <p>
+        Normal conductors are made up of charge carriers that allow current to flow through the material. In metals
+        charge carriers are individual electrons. Ultimately no quantum effects are observed because individual
+        electrons interfere with each other.<br /></p>
+    <p>
+        By contrast, charge carriers in superconductors are pairs of electrons rather than single electrons. The spin
+        of electrons in these pairs form bosons that form Bose-Einstein Condensates, a state of matter where bosons can
+        occupy a single quantum energy level, and so as a result the electron pairs in superconductors can have their
+        flow described by a probability amplitude function that can have complex values, while in normal conductors due
+        to interference quantum effects because of this are not observable.<br /></p>
+    <p>
+        Various companies and research teams view superconducting properties to be the leading method for building and
+        developing quantum computers. Google, IBM, and research teams at various universities have placed resources
+        into researching and developing quantum computers in this way. Through this approach [successes?]<br />
+    </p>
+    <p>
+        One notable challenge to this approach is its requirement for extremely efficient cooling in order to reach
+        temperatures low enough for superconductivity to occur. However, with breakthroughs in chemicals research in
+        recent years as well, the required temperatures to achieve observable superconductivity has gradually become
+        less strict, with the prospect of improving in future with the discovery of new materials.<br />
+    </p>
+    <br />
+    <h1>Ion-Based Quantum Computing</h1>
+
+    <p>
+        This approach uses charged particles in order to perform calculations in quantum time. Trapped ion quantum
+        computers are one example of these computers, in which qubits are stored within the ions’ electronic states.
+        Lasers allow qubits to become entangled with each other, and information can be transferred by charge
+        interaction following Coulomb’s law.<br />
+        So far quantum computing operations have been successfully performed using trapped ion systems. As a result,
+        they have become one of the major areas of research for achieving quantum computing, and one of the most
+        promising, where as of May 2011 up to 14 trapped ions have been controllably entangled.<br />
+    </p>
+    <br />
+
+    <h1>Spin-Based Quantum Computing</h1>
+
+    <p>
+        This form of quantum computing comes in various forms, including approaches using trapped ions, and others
+        using ultracold atoms. The principle behind both of these is the property of spin possessed by molecules, atoms,
+        and subatomic particles to represent qubits.<br />
+        [find more data on this. Also note that it seems relatively unused and unresearched.]<br />
+    </p>
+    <h1>Quantum Optics</h1>
+    <p>
+        Another fairly popular area of research in quantum computing is quantum optics, which works using light’s
+        interaction with matter. Photons demonstrate entanglement, teleportation, and logic gates. As each atom carries
+        energy according to the formula E = hf (h is the Planck constant; f is the photon’s frequency of vibration) and
+        light emitted from atoms will only have certain quanta of energy, light’s quantum properties allow it to be
+        used for building quantum computer hardware.<br />
+        Quantum optics is an area of active research, both for quantum computing and as research into information
+        theory. However, research into quantum optics is relatively recent, and so producing quantum computers by this
+        method, as with others, remains a challenge for researchers and engineers.<br />
+    </p>
+
+    <h1>Topological Quantum Computers</h1>
+
+    <p>
+        Topological quantum computers are a theoretical model for developing quantum computers build off anyons,
+        2-dimensional particles that have their world lines (a particle’s locus through spacetime) intertwine in
+        3-dimensional space to form what are called braids. In topological quantum computers, logic gates are made up
+        by the braids of anyons.<br />
+        This type of quantum computing is theoretically attractive because it has higher stability in having its state
+        changed relative to using trapped quantum particles such as electrons and photons. Operations on braids are
+        either performed as changes in the topological phase of the anions, or as rotation of anions within space.<br />
+        As of yet, little progress has been made towards designing real topological quantum computers in practice. In
+        particular, research on using anions is relatively unexplored, and one type of anyon, non-abelian anyons, are
+        yet to be observed.<br />
+        <br />
+        The various suggested theoretical and practical approaches that are being taken to develop quantum computers are
+        each unique in their strengths and challenges. In recent years, the theoretical developments made towards
+        realizing quantum computers has been assisted in great part by a better understanding of physics, and while the
+        most significant challenge faced by modern quantum computing research teams is an engineering and theoretical
+        one in figuring out how to make them, the prospects of successfully building one in the oncoming years look
+        promising.
+    </p>
+
+</article>
+</body>
+</html>
