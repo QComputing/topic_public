@@ -41,3 +41,7 @@ nav .form-group .btn {
 #nav_margin {
     margin-top: 80px;
 }
+
+#article_title {
+    margin: 45px auto 20px auto
+}

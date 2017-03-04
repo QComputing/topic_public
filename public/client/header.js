@@ -5,7 +5,6 @@
 function loadNavbar() {
 
     console.log('loadNavbar');
-    alert(1);
 }
 
 function buttonAction() {
