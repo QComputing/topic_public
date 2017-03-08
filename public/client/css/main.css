@@ -51,3 +51,9 @@ nav .form-group .btn {
 #title {
     color: #FFFFFF;
 }
+
+.physics_header_image {
+    width: 100%;
+    z-index=0;
+    height: 600px;
+}

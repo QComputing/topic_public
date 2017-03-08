@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Andrew</title>
+    <title>Quantum Computing: Physics</title>
     <!--TODO all the metas-->
-    <meta name="description" content="An attempt to explain what Quantum Computing is about" />
+    <meta name="description" content="A discussion of the physics behind quantum computing and the most popular research paths." />
 
     <!--Pretty fonts-->
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
@@ -24,14 +24,14 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
 
-        <a class="navbar-brand" id="title" href="index.html"><img id="title_img" src="img/logo.png" alt="LogoQC">Quantum Computing: Implementation</a>
+        <a class="navbar-brand" id="title" href="#"><img id="title_img" src="img/logo.png" alt="LogoQC">Quantum Computing: Implementation</a>
 
         <ul class="nav navbar-nav navbar-right">
-            <li class=""><a href="Physics.html">Physics</a></li>
-            <li class="active"><a href="Logic.html">Logic</a></li>
-            <li class="active"><a href="Implemetation.html">Implementation</a></li>
-            <li class="active"><a href="Prospects.html">Prospects</a></li>
-            <li class="active"><a href="References.html">References</a></li>
+            <li class="active"><a href="">The Physics</a></li>
+            <li class="active"><a href="">The Hardware</a></li>
+            <li class="active"><a href="">The Implementation</a></li>
+            <li class="active"><a href="">The Future</a></li>
+            <li class=""><a href="">References</a></li>
         </ul>
 
     </div>
@@ -39,51 +39,76 @@
 
 <div id="nav_margin"></div>
 
+<img class="physics_header_image" src="img/dwave-chip.jpg" />
+
 <!--Start SAMPLE-->
 <div class="blog-header">
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
                 <h1 id="article_title">
-                    This is the title
-                </h1>
-                <p>In the past 10 years substantial work has been made towards making quantum computers a reality. To achieve this, research teams across the world have been trying to find the most viable way of representing qubits, or
-                    <i>quantum bits</i>, using physical phenomena. This is similar to how the binary digits 0 and 1 can be
-                    represented in modern semiconductors by electricity either flowing or not flowing through the material.<br />
+                    The Physics Of Quantum Computing
+		</h1>
+		<p>n the past 10 years substantial work has been made towards making quantum 
+		computers a reality. To achieve this, research teams across the world have been 
+		trying to find the most viable way of representing qubits, or <i>quantum bits</i>, 
+		using physical phenomena. This is similar to how the binary digits 0 and 1 can be 
+		represented in modern semiconductors by electricity either flowing or not flowing 
+		through the material.
+		    <br />
                 </p>
                 <br />
                 <p>
-                    There are several fields of research in attempting to develop a way of representing qubits. Amongst these, the
-                    four most notable are superconductivity, trapped ions, topological quantum computers, and quantum optics. Each
-                    of these fields has attracted research teams hopeful that they can develop a way of using that phenomena to
-                    produce a quantum computer, and trying to produce the hardware needed for these a computer built by these means.
-                    Here we will discuss what some of these requirements are, the differences between these four main approaches for
-                    representing qubits, and the prospect that each of them has for being used in future quantum computers.<br />
+		There are several fields of research in attempting to develop a way of representing 
+		qubits. Amongst these, the four most notable are superconductivity, trapped ions, 
+		topological quantum computers, and quantum optics. Each of these fields has 
+		attracted research teams hopeful that they can develop a way of using that phenomena 
+		to produce a quantum computer, and trying to produce the hardware needed for these 
+		a computer built by these means. Here we will discuss what some of these 
+		requirements are, the differences between these four main approaches for 
+		representing qubits, and the prospect that each of them has for being used in future 
+		quantum computers.
+		    <br />
                 </p>
                 <br />
                 <h2>Superconducting Quantum Computing</h2>
                 <p>
-                    Normal conductors are made up of charge carriers that allow current to flow through the material. In metals
-                    charge carriers are individual electrons. Ultimately no quantum effects are observed because individual
-                    electrons interfere with each other.<br /></p>
+                    Normal conductors are made up of charge carriers that allow current to flow 
+		    through the material. In metals charge carriers are individual electrons. 
+		    Ultimately no quantum effects are observed because individual electrons 
+		    interfere with each other.
+		    <br />
+		</p>
                 <p>
-                    By contrast, charge carriers in superconductors are pairs of electrons rather than single electrons. The spin
-                    of electrons in these pairs form bosons that form Bose-Einstein Condensates, a state of matter where bosons can
-                    occupy a single quantum energy level, and so as a result the electron pairs in superconductors can have their
-                    flow described by a probability amplitude function that can have complex values, while in normal conductors due
-                    to interference quantum effects because of this are not observable.<br /></p>
+                    By contrast, charge carriers in superconductors are pairs of electrons rather 
+		    than single electrons. The spin of electrons in these pairs form bosons that 
+		    form Bose-Einstein Condensates, a state of matter where bosons can occupy a 
+		    single quantum energy level, and so as a result the electron pairs in 
+		    superconductors can have their flow described by a probability amplitude 
+		    function that can have complex values, while in normal conductors due to 
+		    interference quantum effects because of this are not observable.
+		    <br />
+		</p>
                 <p>
                     Various companies and research teams view superconducting properties to be the leading method for building and
-                    developing quantum computers. Google, IBM, and research teams at various universities have placed resources
-                    into researching and developing quantum computers in this way. Through this approach [successes?]<br />
+                    developing quantum computers. Google,<sup>[1]</sup> IBM,<sup>[2]</sup> and private research companies 
+                    Rigetti<sup>[3]</sup> and Quantum Circuits<sup>[3]</sup> have all placed resources into developing quantum 
+                    computers in this way. Through this approach it has been theoretically suggested that this may enable quantum 
+                    error correction on devices that use it. Google’s superconducting devices have also been successful in showing 
+                    the ability to solve special types of quantum problems that allow them to simulate scenarios such as the 
+                    interactions between many elections, called <i>non-stoquastic problems.</i><sup>[1]</sup><br />
                 </p>
                 <p>
-                    One notable challenge to this approach is its requirement for extremely efficient cooling in order to reach
-                    temperatures low enough for superconductivity to occur. However, with breakthroughs in chemicals research in
-                    recent years as well, the required temperatures to achieve observable superconductivity has gradually become
-                    less strict, with the prospect of improving in future with the discovery of new materials.<br />
+                    One notable challenge to this approach is its requirement for extremely efficient cooling in order to reach 
+                    temperatures low enough for superconductivity to occur. However, with modern cryogenic technologies such as 
+                    <i>dilution refrigerators</i>, a type of refrigerator that uses a mix of <sup>3</sup>He and <sup>4</sup>He to 
+                    achieve temperatures as low as a few millikelvin<sup>[4]</sup>, the temperatures needed to achieve 
+                    superconductivity have become realistically achievable. More problematic than this is that in quantum 
+                    computers computation can only be performed while its coherence is maintained, and therefore the decoherence 
+                    time must be sufficiently long.<sup>[6]</sup><br />
                 </p>
                 <br />
+                <embed src="sample.mov" width="600" height="400" scale="aspect" controller="true">
                 <h2>Ion-Based Quantum Computing</h2>
 
                 <p>
