@@ -1,68 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Andrew</title>
-    <!--TODO all the metas-->
-    <meta name="description" content="An attempt to explain what Quantum Computing is about" />
+   <head>
+      <meta charset="UTF-8">
+      <title>Physical Implementations</title>
+      <!--TODO all the metas-->
+      <meta name="description" content="An attempt to explain what Quantum Computing is about" />
+      <!--Pretty fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+      <!--Our css-->
+      <link rel="stylesheet" href="css/main.css">
+      <!--Bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!--TODO refactor this section that just ease the creation-->
+      <link rel="script" href="header.js">
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+            <a class="navbar-brand" id="title" href="index.html"><img id="title_img" src="img/logo.png" alt="LogoQC">Quantum Computing: Implementation</a>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="active"><a href="Physics.html">Physics</a></li>
+               <li class=""><a href="Logic.html">Logic</a></li>
+               <li class="active"><a href="Implemetation.html">Implementation</a></li>
+               <li class="active"><a href="Prospects.html">Prospects</a></li>
+               <li class="active"><a href="References.html">References</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div id="nav_margin"></div>
 
-    <!--Pretty fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+      <img class="physics_header_image" src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2016/08/31180000/bbcrezqu1103-800x533.jpg" />
 
-    <!--Our css-->
-    <link rel="stylesheet" href="css/main.css">
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!--Start SAMPLE-->
+      <div class="blog-header">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-8">
+                  <h1 id="article_title">
+                     Physical Implementations
+                  </h1>
 
+                    <h2>
+                     Quantum Logic Gates
+                  </h2>
+                  <p>
+                     Quantum computers use logic gates in a similar way to classical computers.
+                     They lay the foundations of quantum circuits. Unlike classical logic gates, all quantum logic gates must be reversible.
+                     This is due to a property in quantum mechanics called unitarity.
+                     This is because the probability of all possible outcomes should remain one after every operation.
+                  </p>
+                  <h3> Phase Shift Gates</h3>
+                  <p>
+                    These gates leave the |0> state unchanged and converts the |1> to e^ix|1>.
+                  </p>
+                  <h3> Pauli Gates - </h3>
+                  <table style="width:100%">
+                     <tr>
+                        <th>Pauli-X Gate</th>
+                        <th>Pauli-Y Gate</th>
+                        <th> Pauli-Z Gate</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Qcircuit_NOT.svg" alt="Pauli X Gate" style="width:200px;height:100px;">
+                        </td>
+                        <td>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Qcircuit_CY.svg/150px-Qcircuit_CY.svg.png" alt="Pauli Y Gate" style="width:200px;height:100px;">
+                        </td>
+                        <td>
+                          <img src="http://68.media.tumblr.com/be8df941a6781f9709b5abe2389499f4/tumblr_inline_n2hd5jfSKK1rs88ax.png" alt="Pauli Z Gate" style="width:200px;height:100px;">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                             This acts on a single qubit which maps |0> to |1> and |1> to |0>. This gate rotates the Bloch sphere(qubit) around the X-axis by pi radians. The Pauli X gate is equivalent to the classical NOT gate
+                        </td>
+                        <td>
+                          This gate rotates a qubit around the Y-axis by pi radians. It maps |0> to i|1> and |1> to -i|0>.
+                           (add matrix)
+                        </td>
+                        <td>
+                          This gate rotates a qubit around the Z axis by pi radians. It leaves |0> state unchanged and maps |1> to -|1>.  This is a a phase shit gate with x = pi.
+                        </td>
+                     </tr>
+                  </table>
+                  <h3> SWAP Gate</h3>
+                  <p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Swap_gate.svg" alt="SWAP Gate" style="width:200px;height:100px;">
 
-    <!--TODO refactor this section that just ease the creation-->
-    <link rel="script" href="header.js">
-</head>
+                    A swap gate takes 2 inputs and swaps them around and outputs them.
+                                      </p>
+                  <h3> Toffoli Gate</h3>
+                  <p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Toffoli_gate.svg" alt="Toffoli Gate" style="width:200px;height:100px;">
+                    The Toffoli gate is a universal reversible gate. This means that any reversible logic gate can be constructed from a combination of Toffoli gates. It is also called the Controlled-Controlled Not Gate.
+                    It takes a 3 qubit input and returns a 3 qubit output. The first two bits are control bits and only when they are both a 1 the third bit is inverted.
+                  </p>
+                  <h3>
+                     Controlled Gates -
+                  </h3>
+                  <p>
+                     These gates perform actions on two or more gates where one or more gates act as a control.
+                     A few examples of such gates are as follows -
+                  </p>
+                  <table style="width:100%">
+                     <tr>
+                        <th>Controlled Not Gate</th>
+                        <th>Controlled U Gate</th>
+                        <th>Controlled SWAP Gate (Fredkin Gate)</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/CNOT_gate.svg" alt="Controlled Not Gate" style="width:200px;height:100px;">
+                        </td>
+                        <td>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Controlled_gate.svg" alt="Controlled U Gate" style="width:200px;height:100px;">
+                        </td>
+                        <td>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Fredkin_gate.svg" alt="Fredkin Gate" style="width:200px;height:100px;">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>
+                              This gate acts on two qubits and perform a not operation on the second qubit only if the first qubit is a one.
+                           </p>
+                           <p>
+                              (add matrix)
+                           </p>
+                        </td>
+                        <td>
+                           The Controlled U Gate is a generalized version of the CN gate.
+                           (add matrix)
+                        </td>
+                        <td>
+                          The Fredkin gate is a universal revisible gate which has three inputs and three outputs. This gate swaps the second and third qubits only if the first qubit is a 1.
+                          It has been anounced in early 2016 that a quantum fredkin gate has been built.
+                        </td>
+                     </tr>
+                  </table>
+                  <p>
+                     Some quantum logic gates such as the CN, CCN and CEX gates can exist in classical computing.
+                     The CEX takes a 3 qubit input and returns a 3 qubit output. This gate performs an XOR operation on the second and third qubits when the first qubit is a 1 otherwise the output is the same as the input.
+                  </p>
 
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-
-        <a class="navbar-brand" id="title" href="index.html"><img id="title_img" src="img/logo.png" alt="LogoQC">Quantum Computing: Implementation</a>
-
-        <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="Physics.html">Physics</a></li>
-            <li class=""><a href="Logic.html">Logic</a></li>
-            <li class="active"><a href="Implemetation.html">Implementation</a></li>
-            <li class="active"><a href="Prospects.html">Prospects</a></li>
-            <li class="active"><a href="References.html">References</a></li>
-        </ul>
-
-    </div>
-</nav>
-
-<div id="nav_margin"></div>
-
-<!--Start SAMPLE-->
-<div class="blog-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <h1 id="article_title">
-                    This is gonna be you main title "the title"
-                </h1>
-                <h2>
-                    SubHeading
-                </h2>
-                <h3>
-                    Can even do sub sub heading.
-                </h3>
-                <p>
-                    All paragraphs should be in p tags, new lines via the use of <br />
-                    you can <i>italics</i> and <bold>bold</bold> text.
-                </p>
-                <span>
-                    Pranav I'm in love with you would you marry someone else?
-                </span>
+                  <p>
+                    <iframe src="http://www.davyw.com/quantum/" width = "800" height = "200">
+                    </iframe>
+                  </p>
+                  <h2>
+                  <h2> Ion Trap Quantum Computers </h2>
+                  <p>
+                     Ion Traps are at the forefront of quantum computing as they satisfy most of Divincenzo’s Criteria. <br />
+                    <img src="img/IonTrap.png" alt="Ion Trap" style="width:400px;height:200px;"> <br />
+                     Lasers are a key part of the ion trap quantum computers as they are used for state preparation  and manipulation of ions. The ions are initialised using a process called optical pumping. This process uses light to excite the electrons in an ion from a lower energy level to a higher energy level(a well defined quantum state). <br />
+                     In order to detect ions, a photo-multiplier tube (PMT) and an electron multiplied charged coupled device (EM-CCD) camera are used.  These two devices detect the light produced by the ions. The PMT is faster than the EM-CCD at detecting the ions but the EM-CCD offers the resolution of individual ions. State detection of the electronic qubit can be achieved by the electron-shelving technique. The electron shelving technique measures the probability of the ion to be in one of the qubit states. <br />
+                     However, one of the main problems of Ion-Trap Quantum Computing is Scalability. When trying to perform multi-qubit operations, the ions form a chain and by adding more and more ions together, the chains get heavier but the coupling strength decreases. This means that the time taken for gate operations is longer and it is quite hard to cool all ions to the ground state. A few of the proposed solutions into fixing the scalability is to use multiple ion traps with fewer icons and couple them together. One of the proposed solutions is to use a quantum-charge-coupled-device which moves ions between memory and the area where all the interactions take place by changing the electric fields. <br />
+                     In order to transport quantum information, One of the proposed solutions is to use photons as carriers. This method would require mapping of quantum information from an ion to a photon. Cavity QED experiments have shown promising results in coupling photons and atomic states. <br />
+                     Another way is to transport quantum informations to move ions from one trap to another trap. This requires a very fast variation and precise control of the trapping voltages. In the experiments conducted so far, it is believed that moving ions from one trap to another is as fast as a gate operations(100ms). The problem with this method is that we cannot use low-pass filters to reduce electrical noises which could lead to heating of ions. <br />
+                  </p>
+                  <h2>Optical Quantum Computing - </h2>
+                  <p>
+                     Optical Quantum computing is one of the promising ways of physically implementing a quantum computer as it links quantum communication and quantum computing together. Single photons are free of noise and decoherence which a major advantage which other systems have to accommodate when making calculations and error corrections. The photons can be encoded in different ways and can be converted from one encoding to another. <br />
+                     For an Optical quantum computer to become a reality, it must have a universal set of logic gates. The problem arises when a two qubit operation needs to be performed as photons generally do not interact with each other. The KLM protocol (Knill, Laflamme and Milburn) uses single photons to create two qubit gates. <br />
+                     In order to faithfully transmit flying qubits between specified locations, we would need incorporate error correction to ensure that photon loss doesn’t occur. Transmitting qubits is at the heart of quantum cryptography and key distribution protocols. By using quantum cryptography, we can prevent counterfeiting by using photons to create money. Due to the uncertainty principle, one cannot measure accurately the photons and therefore cannot counterfeit money. Using this principle we can use photons to transmit messages securely.<br />
+                  </p>
+                  <span>
+                  Pranav I'm in love with you would you marry someone else?
+                  NO
+                  </span>
+               </div>
             </div>
-        </div>
-    </div>
-</div>
-</body>
+         </div>
+      </div>
+   </body>
 </html>
