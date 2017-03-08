@@ -60,9 +60,10 @@
                 <p>
                     <b>“Quantum mechanics can speed up a range of search applications over unsorted data.”</b> (Groover, 1997). Groover studied in his paper the problem of accessing an unsorted database of <i>N</i> states. On average you hope to only need to scan half of the database before finding the required entry, but in the worst case, you will scan all <i>N</i> entries of the database (<i>O(N)</i>). The Quantum algorithm uses properties of the amplitude of qubits. The algorithm can be described as follows:<br />
                     Only one item (<i>I</i>) in the database satisfies the property <i>P(I)=1</i>, for all the others states <i>S</i> we have <i>P(S)=0</i>.<br />
-                    Initialise the system so each state has the same amplitude (superposition <!-- TODO--> ).<br/>
+                    Initialise the system so each state has the same amplitude (superposition <img src="img/image001.png" />).<br/>
+                    Say <img src="img/image002.png" /><br />
                     Apply the transformation <i>T</i> and if a state reaches <i>P(S) = 1</i>, rotate the phase by 180 degrees.<br/>
-                    Note that the transformation <i>T</i> affects the amplitude [MF3]  of the states in such a way the desired one will stand out. The complexity of the loop and of the initialisation makes it a <!--TODO--> , which is a gain of polynomial order (divided by two) compared to the classic algorithm.
+                    Note that the transformation <i>T</i> affects the amplitude of the states in such a way the desired one will stand out. The complexity of the loop and of the initialisation makes it a <img src="img/image004.png"/> , which is a gain of polynomial order (divided by two) compared to the classic algorithm.
                 </p><br />
                 <p>
                     On another note, QC are also very good at applying Fourrier's transform. The Discrete Fourier’s transform represents the frequency domain of the given input. It can be applied to quantum algorithms and implemented very efficiently, particularly useful for finding eigenvalue of unitary operators and probably its most famous application is the use in Shor’s algorithm.
