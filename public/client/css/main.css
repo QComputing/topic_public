@@ -54,7 +54,7 @@ nav .form-group .btn {
 
 .physics_header_image {
     width: 100%;
-    z-index=0;
+    /*z-index=0;*/
     margin-top: -300px;
     height: 900px;
     /*
