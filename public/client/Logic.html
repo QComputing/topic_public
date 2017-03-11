@@ -14,6 +14,11 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <!--TODO refactor this section that just ease the creation-->
       <link rel="script" href="header.js">
+      <style>
+        th, td {
+          padding: 15px;
+        }
+      </style>
    </head>
    <body>
       <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -30,7 +35,7 @@
       </nav>
       <div id="nav_margin"></div>
 
-      <img class="physics_header_image" src="https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2016/08/31180000/bbcrezqu1103-800x533.jpg" />
+      <img class="physics_header_image" src="img/quantum-computing.jpg"/>
 
       <!--Start SAMPLE-->
       <div class="blog-header">
@@ -53,49 +58,66 @@
                   <h3> Phase Shift Gates</h3>
                   <p>
                     These gates leave the |0> state unchanged and converts the |1> to e^ix|1>.
+                    <img src="img/PhaseShift.png" alt="SWAP Gate" style="width:200px;height:100px;">
                   </p>
                   <h3> Pauli Gates - </h3>
                   <table style="width:100%">
                      <tr>
                         <th>Pauli-X Gate</th>
                         <th>Pauli-Y Gate</th>
-                        <th> Pauli-Z Gate</th>
+                        <th>Pauli-Z Gate</th>
                      </tr>
                      <tr>
                         <td>
-                           <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Qcircuit_NOT.svg" alt="Pauli X Gate" style="width:200px;height:100px;">
+                           <img src="img/PauliXG.png" alt="Pauli X Gate" style="width:200px;height:100px;">
                         </td>
                         <td>
-                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Qcircuit_CY.svg/150px-Qcircuit_CY.svg.png" alt="Pauli Y Gate" style="width:200px;height:100px;">
+                           <img src="img/PauliYG.png" alt="Pauli Y Gate" style="width:200px;height:100px;">
                         </td>
                         <td>
-                          <img src="http://68.media.tumblr.com/be8df941a6781f9709b5abe2389499f4/tumblr_inline_n2hd5jfSKK1rs88ax.png" alt="Pauli Z Gate" style="width:200px;height:100px;">
+                          <img src="img/PauliZG.png" alt="Pauli Z Gate" style="width:200px;height:100px;">
                         </td>
                      </tr>
                      <tr>
                         <td>
-                             This acts on a single qubit which maps |0> to |1> and |1> to |0>. This gate rotates the Bloch sphere(qubit) around the X-axis by pi radians. The Pauli X gate is equivalent to the classical NOT gate
+                             This acts on a single qubit which maps |0> to |1> and |1> to |0>.
+                             This gate rotates the Bloch sphere(qubit) around the X-axis by pi radians.
+                             The Pauli X gate is equivalent to the classical NOT gate
                         </td>
                         <td>
-                          This gate rotates a qubit around the Y-axis by pi radians. It maps |0> to i|1> and |1> to -i|0>.
-                           (add matrix)
+                          This gate rotates the Bloch sphere around the Y-axis by pi radians. It maps |0> to i|1> and |1> to -i|0>.
                         </td>
                         <td>
                           This gate rotates a qubit around the Z axis by pi radians. It leaves |0> state unchanged and maps |1> to -|1>.  This is a a phase shit gate with x = pi.
                         </td>
                      </tr>
+                     <tr>
+                        <td>
+                           <img src="img/PauliX.png" alt="Pauli X Gate" style="width:200px;height:100px;">
+                        </td>
+                        <td>
+                           <img src="img/PauliY.png" alt="Pauli Y Gate" style="width:200px;height:100px;">
+                        </td>
+                        <td>
+                          <img src="img/PauliZ.png" alt="Pauli Z Gate" style="width:200px;height:100px;">
+                        </td>
+                     </tr>
+
                   </table>
                   <h3> SWAP Gate</h3>
                   <p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Swap_gate.svg" alt="SWAP Gate" style="width:200px;height:100px;">
-
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Swap_gate.svg" alt="SWAP Gate" style="width:200px;height:100px;"> <br />
                     A swap gate takes 2 inputs and swaps them around and outputs them.
-                                      </p>
+                    <img src="img/SWAP.png" alt="SWAP Gate" style="width:200px;height:100px;">
+
+                  </p>
                   <h3> Toffoli Gate</h3>
                   <p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Toffoli_gate.svg" alt="Toffoli Gate" style="width:200px;height:100px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Toffoli_gate.svg" alt="Toffoli Gate" style="width:200px;height:100px;"> <br />
                     The Toffoli gate is a universal reversible gate. This means that any reversible logic gate can be constructed from a combination of Toffoli gates. It is also called the Controlled-Controlled Not Gate.
-                    It takes a 3 qubit input and returns a 3 qubit output. The first two bits are control bits and only when they are both a 1 the third bit is inverted.
+                    It takes a 3 qubit input and returns a 3 qubit output. The first two bits are control bits and only when they are both a 1 the third bit is inverted. <br />
+                    <img src="img/Toffoli.png" alt="Toffoli Gate" style="width:250px;height:150px;">
+
                   </p>
                   <h3>
                      Controlled Gates -
@@ -118,7 +140,7 @@
                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Controlled_gate.svg" alt="Controlled U Gate" style="width:200px;height:100px;">
                         </td>
                         <td>
-                          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Fredkin_gate.svg" alt="Fredkin Gate" style="width:200px;height:100px;">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Fredkin_gate.svg" alt="Fredkin Gate" style="width:250px;height:200px;">
                         </td>
                      </tr>
                      <tr>
@@ -126,19 +148,27 @@
                            <p>
                               This gate acts on two qubits and perform a not operation on the second qubit only if the first qubit is a one.
                            </p>
-                           <p>
-                              (add matrix)
-                           </p>
                         </td>
                         <td>
                            The Controlled U Gate is a generalized version of the CN gate.
-                           (add matrix)
                         </td>
                         <td>
                           The Fredkin gate is a universal revisible gate which has three inputs and three outputs. This gate swaps the second and third qubits only if the first qubit is a 1.
                           It has been anounced in early 2016 that a quantum fredkin gate has been built.
                         </td>
                      </tr>
+                     <tr>
+                        <td>
+                          <img src="img/CNOT.png" alt="Controlled Not Gate" style="width:200px;height:100px;">
+                        </td>
+                        <td>
+                          <img src="img/CU.png" alt="Controlled U Gate" style="width:200px;height:100px;">
+                        </td>
+                        <td>
+                          <img src="img/Fredkin.png" alt="Fredkin Gate" style="width:200px;height:100px;">
+                        </td>
+                     </tr>
+
                   </table>
                   <p>
                      Some quantum logic gates such as the CN, CCN and CEX gates can exist in classical computing.
@@ -165,9 +195,16 @@
                       Optical Quantum Computing -
                   </h2>
                   <p>
-                     Optical Quantum computing is one of the promising ways of physically implementing a quantum computer as it links quantum communication and quantum computing together. Single photons are free of noise and decoherence which a major advantage which other systems have to accommodate when making calculations and error corrections. The photons can be encoded in different ways and can be converted from one encoding to another. <br />
-                     For an Optical quantum computer to become a reality, it must have a universal set of logic gates. The problem arises when a two qubit operation needs to be performed as photons generally do not interact with each other. The KLM protocol (Knill, Laflamme and Milburn) uses single photons to create two qubit gates. <br />
-                     In order to faithfully transmit flying qubits between specified locations, we would need incorporate error correction to ensure that photon loss doesn’t occur. Transmitting qubits is at the heart of quantum cryptography and key distribution protocols. By using quantum cryptography, we can prevent counterfeiting by using photons to create money. Due to the uncertainty principle, one cannot measure accurately the photons and therefore cannot counterfeit money. Using this principle we can use photons to transmit messages securely.<br />
+                    Optical Quantum computing is one of the promising ways of physically implementing a quantum computer as it links quantum communication and quantum computing together. Single photons are free of noise and decoherence which a major advantage which other systems have to accommodate when making calculations and error corrections. The photons can be encoded in different ways and can be converted from one encoding to another.  <br />
+
+                    Some of the hardware used in optical quantum computing are phase shifters, beam splitters.
+                    A phase shifter is made of transparent material which has a refractive index that is different from free space (Free space refractive index ~ 1.00). A beam splitter is made out of semi-reflective mirror which partially reflects the light that falls on the mirror and transmits the rest. In order to measure the qubits, we can use photon detectors. There are many types of beam splitter but the two main ones are number resolving photon detectors which measures how many qubits there are and the bucket detector which gives a binary output telling us if there are zero qubits or many qubits present. <br /> <br />
+
+                    For an Optical quantum computer to become a reality, it must have a universal set of logic gates. The problem arises when a two qubit operation needs to be performed as photons generally do not interact with each other. The KLM protocol (Knill, Laflamme and Milburn) uses single photons to create two qubit gates.
+                    The KLM protocol requires the use of non-deterministic quantum gates which means that the probability of success for a circuit with N gates is p^N where p is the probability of success of a single gate. So in order to make sure we need to repeat the process p^-n. This is a problem as the time required to compute this would grow exponentially. In order to fix this, we can fix by using quantum teleportation. We can prepare a probabilistic gate offline and teleport back the successful event to the quantum circuit. By preparing probabilistic gates (such as the Controlled Phase gate) offline and we don’t destroy the quantum information on the qubit when a probabilistic gate fails. <br />
+
+                    In order to faithfully transmit flying qubits between specified locations, we would need incorporate error correction to ensure that photon loss doesn’t occur. Transmitting qubits is at the heart of quantum cryptography and key distribution protocols. By using quantum cryptography, we can prevent counterfeiting by using photons to create money. Due to the uncertainty principle, one cannot measure accurately the photons and therefore cannot counterfeit money. Using this principle we can use photons to transmit messages securely. <br />
+
                   </p>
                   <span>
                   </span>
@@ -178,4 +215,3 @@
 <div style="height: 100px;"></div>
 </body>
 </html>
->>>>>>> refs/remotes/origin/master
