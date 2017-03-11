@@ -170,11 +170,22 @@
 		    become one of the major areas of research for achieving 
 		    quantum computing, and one of the most promising, where as 
 		    of May 2011 up to 14 trapped ions have been controllably 
-		    entangled.<sup>[8]</sup>
+		    entangled.<sup>[8]</sup><br />
+		    However, this approach has difficulties with scalability. 
+		    The main problem with scalability lies in performing 
+		    multiple-qubit operations. To do these, ions need to form 
+		    a chain, but as size increases the coupling between each 
+		    ion gets weaker. This causes problems for larger numbers of 
+		    qubits within ion-trap quantum computers.<sup>[9]</sup>
+		    <br />
 		    This approach has proved quite promising from an engineering
-		    perspective, one such example being this milestone. For more
-		    information, see the 
-		    <a href="https://www.w3schools.com/html/"><i>implementations page.</i>
+		    perspective, one such example being the milestone of 
+		    successful 14-qubit implementation. Even so, many problems 
+		    remain to be overcome regarding scalability before this 
+		    approach can be used more effectively. <br />
+		    For more information, see the
+		    <a href="Logic.html">
+			    <i>implementation page.</i>
 		    </a>
 		    <br />
                 </p>
@@ -183,21 +194,34 @@
 		<h2>Quantum Optics</h2>
 
                 <p>
-                    Another fairly popular area of research in quantum 
-		    computing is quantum optics, which works using light’s
-                    interaction with matter. Photons demonstrate entanglement, 
-		    teleportation, and logic gates. As each atom carries energy 
-		    according to the formula E = hf (h is the Planck constant; 
-		    f is the photon’s frequency of vibration) and light emitted 
-		    from atoms will only have certain quanta of energy, light’s 
-		    quantum properties allow it to be used for building quantum 
-		    computer hardware.<br />
-                    Quantum optics is an area of active research, both for 
-		    quantum computing and as research into information theory. 
-		    However, research into quantum optics is relatively recent, 
-		    and so producing quantum computers by this method, as with 
-		    others, remains a challenge for researchers and engineers.
-		    <br />
+                    Another popular area of research in quantum computing is 
+		    quantum optics, which works using the interaction of light 
+		    with matter. Photons display entanglement, teleportation, 
+		    and can be transformed by quantum logic gates. As each atom 
+		    carries energy according to the formula E = hf (h is the 
+		    Planck constant; f is the photon’s frequency of vibration) 
+		    and light emitted from atoms will only have certain quanta 
+		    of energy, light’s quantum properties allow it to be used 
+		    for building quantum computer hardware.<br />
+		    The major benefit of this approach is that photons are 
+		    largely unaffected by noise, and so are far less severely 
+		    affected by decoherence<sup>[10]</sup>. Because quantum 
+		    calculations can only occur during times of coherence, this 
+		    is a massively important property in quantum optics. 
+		    Furthermore, qubits represented by photons can be 
+		    faithfully transmitted between specified 
+		    locations.<sup>[11]</sup><br />
+		    Despite this, this transmission is only reliable up to 
+		    1 km. Another significant disadvantage is that photons do 
+		    not interact with each other, as is normally needed for a  
+		    quantum computer.<sup>[12]</sup><br />
+		    Overall, this approach is promising from a theoretical 
+		    perspective, and especially attractive because they are 
+		    so weakly affected by decoherence. But due to the 
+		    significant problem of photons not interacting with each 
+		    other, it may face problems being properly implemented to 
+		    make a quantum computer in future compared to other 
+		    alternative methods. <br />
                 </p>
 		<br />
 
@@ -214,15 +238,18 @@
                     This type of quantum computing is theoretically attractive 
 		    because it has higher stability in having its state changed 
 		    relative to using trapped quantum particles such as 
-		    electrons and photons. Operations on braids are either 
-		    performed as changes in the topological phase of the 
-		    anions, or as rotation of anions within space.<br />
+		    electrons and photons<sup>[13]</sup>. Operations on braids 
+		    are either performed as changes in the topological phase of 
+		    the anions, or as rotation of anions within space.<br />
                     As of yet, little progress has been made towards designing 
-		    real topological quantum computers in practice. In 
-		    particular, research on using anions is relatively 
-		    unexplored, and one type of anyon, non-abelian anyons, are
-                    yet to be observed.<br />
+		    real topological quantum computers in 
+		    practice.<sup>[14]</sup> In particular, research on using 
+		    anions is relatively unexplored, and one type of anyon, 
+		    non-abelian anyons, are yet to be observed.<br />
+		    Below is a video briefly outlining the principles behind 
+		    topological quantum computing.<br />
                     <br />
+
 		    <!--Topological Computing Video Embedding-->
 		    <iframe width="854" height="480" src="https://www.youtube.com/embed/igPXzKjqrNg" frameborder="0" allowfullscreen>
 		    </iframe>
@@ -230,44 +257,6 @@
 		    <br />
 		</p>
 		<br />
-		
-		<h2>Conclusion</h2>
-
-		<p>
-                The various suggested theoretical and practical approaches that 
-		are being taken to develop quantum computers are each unique in 
-		their strengths and challenges. In recent years, the 
-		theoretical developments made towards realizing quantum 
-		computers has been assisted in great part by a better 
-		understanding of physics, and while the most significant 
-		challenge faced by modern quantum computing research teams is 
-		an engineering and theoretical one in figuring out how to make 
-		them, the prospects of successfully building one in the 
-		oncoming years look promising.
-                </p>
-		<table border="1">
-			<tr>
-				<td>Property / Computer Type</td>
-				<td>Superconductivity</td>
-				<td>Ion-Trapping</td>
-				<td>Optics</td>
-				<td>Topological</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td>Topological</td>
-				<td>Row 2, Column 1</td>
-				<td>Row 2, Column 2</td>
-			</tr>
-			<tr>
-				<td>Optics</td>
-				<td>Optics</td>
-				<td>Optics</td>
-				<td>Optics</td>
-				<td>Optics</td>
-			</tr>
-		</table>
 	    </div>
     </div>
 </div>
