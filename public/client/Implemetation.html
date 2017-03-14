@@ -28,8 +28,8 @@
 
         <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="Physics.html">Physics</a></li>
-            <li class="active"><a href="Logic.html">Logic</a></li>
-            <li class=""><a href="Implemetation.html">Implementation</a></li>
+            <li class="active"><a href="Logic.html">Implementation</a></li>
+            <li class=""><a href="">Algorithms</a></li>
             <li class="active"><a href="Prospects.html">Prospects</a></li>
             <li class="active"><a href="References.html">References</a></li>
         </ul>
@@ -38,6 +38,8 @@
 </nav>
 
 <div id="nav_margin"></div>
+
+<img class="physics_header_image" src="img/d-wave-array.jpg" />
 
 <!--Start SAMPLE-->
 <div class="blog-header">
@@ -48,17 +50,20 @@
                     Quantum Algorithm and Programming
                 </h1>
                 <p>
-                    Implementation mean in Object Oriented Programming (OOP) that a class provide the methods specified in the interface. However, implementing is not specific to OOP and concerns more generally the realisation of algorithms; algorithms which once carefully programmed should output a result that fits a given problem.
-                    To study the quantum implementation, it’s therefore important to work out the logic and algorithms that drive these machines and make them so powerful. We are used to multi-purpose computers that are easily reprogrammable, we need to go back to lower level of details to higher order programming language, this is the key in the development of QC and their implementation.
+
+                    Algorithm are at the foundation of computing, they output a result that fits a given problem by the execution of a logical sequence of steps.
+                    One of the motivation behind the implementation of a quantum computer would be the realisation of quantum algorithms can take advantage of the quantum computers.
+                    Some researchers<sup>[1]</sup> are trying to release make them happen as fast as possible by creating the simplest QC as possible using Boson sampling for example.<br />
+                    To study the quantum implementation, it’s therefore important to work out the logic and algorithms that drive these machines and make them so powerful. We are used to multi-purpose computers that are easily reprogrammable, we need to go back to lower level of details to higher order programming language, this is the key for the economic development of QC and their implementations.
                 </p>
                 <h2>
                     Quantum Algorithms
                 </h2>
                 <p>
-                    Algorithm exists from the dawn of computing. They are a sequence of steps that should lead to a logical, generally immutable, and meaningful outcome. We find computers better than humans to follow most algorithm as their capacity to calculate and treat data exceed us by far. However, even Gordon Moore (Moore, 1965) could not predict that we would go so small in the transistors that we would face the limits of the atom. As a consequence, the computing power on regular CPU is not likely to continue increasing as it has now. One of the flaw of those chips, especially in an era like ours where the Big Data is becoming so crucial, the analysis of such flow of information is going to be impossible. Another would be  the analysis of multiple factor that impact a phenomenon requires the analysis of each one of them varying separately (weather predictions, deciphering communication, etc.). The algorithms for QC take advantage of the fact QC can explore multiple solutions at once and therefore more capable of tackling today’s computing limitation. We'll go through some of those
+                    Algorithm exists from the dawn of computing. They are a sequence of steps that should lead to a logical, generally immutable, and meaningful outcome. We find computers better than humans to follow most algorithm as their capacity to calculate and treat data exceed us by far. However, even Gordon Moore<sup>[2]</sup> could not predict that we would go so small in the transistors that we would face the limits of the atom. As a consequence, the computing power on regular CPU is not likely to continue increasing as it has now. One of the flaw of those chips, especially in an era like ours where the Big Data is becoming so crucial, the analysis of such flow of information is going to be impossible. Another would be  the analysis of multiple factor that impact a phenomenon requires the analysis of each one of them varying separately (weather predictions, deciphering communication, etc.). The algorithms for QC take advantage of the fact QC can explore multiple solutions at once and therefore more capable of tackling today’s computing limitation. We'll go through some of those
                 </p><br />
                 <p>
-                    <b>“Quantum mechanics can speed up a range of search applications over unsorted data.”</b> (Groover, 1997). Groover studied in his paper the problem of accessing an unsorted database of <i>N</i> states. On average you hope to only need to scan half of the database before finding the required entry, but in the worst case, you will scan all <i>N</i> entries of the database (<i>O(N)</i>). The Quantum algorithm uses properties of the amplitude of qubits. The algorithm can be described as follows:<br />
+                    <b>“Quantum mechanics can speed up a range of search applications over unsorted data.”</b> <sup>[3]</sup>. Groover studied in his paper the problem of accessing an unsorted database of <i>N</i> states. On average you hope to only need to scan half of the database before finding the required entry, but in the worst case, you will scan all <i>N</i> entries of the database (<i>O(N)</i>). The Quantum algorithm uses properties of the amplitude of qubits. The algorithm can be described as follows:<br />
                     Only one item (<i>I</i>) in the database satisfies the property <i>P(I)=1</i>, for all the others states <i>S</i> we have <i>P(S)=0</i>.<br />
                     Initialise the system so each state has the same amplitude (superposition <img src="img/image001.png" />).<br/>
                     Say <img src="img/image002.png" /><br />
@@ -69,7 +74,7 @@
                     On another note, QC are also very good at applying Fourrier's transform. The Discrete Fourier’s transform represents the frequency domain of the given input. It can be applied to quantum algorithms and implemented very efficiently, particularly useful for finding eigenvalue of unitary operators and probably its most famous application is the use in Shor’s algorithm.
                 </p>
                 <p>
-                    Shor’s algorithm has become very famous over the years as its realisation, if it should come, will affect radically the domain of communication and cryptography that protects everyone’s privacy. Decrypting an RSA transaction to a bank to retrieve the credit cards info could be done in polynomial time –in terms of log n- instead of exponential time leaving many systems at risk.<br/>
+                    Shor’s algorithm<sup>[4]</sup> has become very famous over the years as its realisation, if it should come, will affect radically the domain of communication and cryptography that protects everyone’s privacy. Decrypting an RSA transaction to a bank to retrieve the credit cards info could be done in polynomial time –in terms of log n- instead of exponential time leaving many systems at risk.<br/>
                     The factorisation algorithm of a number <i>N</i> consists like many Quantum algorithms of a classic routine run on a regular computer, that routine triggers at some point a quantum subroutine, but the process is originally controlled by a regular computer. The main advantage of this method is that it allows to save resources on both machines as they are used to what they are the most efficient for. The Quantum routine is very specialised and only serves as finding the order of an element; its efficiency results in the ability to search a remaining square root of different from 1 and -1.<br />
                     We are sure this root exists, as stated by the Chinese remainder theorem. Finding such a number <i>S</i> and taking <i>d = gdc(S-1, N)</i>  implies that <i>d</i> will be a proper factor of N (different from 0 and <i>N</i>).
                     Indeed <i>d</i> is proper because:
@@ -100,18 +105,19 @@
                     Towards Quantum Programming Languages
                 </h2>
                 <p>
-                    For a computer to be truly useful and game changer, it is important to be able to program it. From the first “Hello, Quantum World” (which may be more difficult than it looks like), to Shor’s algorithm, programmers need to be able to express their ideas to the machine. Powerful and diverse programming languages could inspire generation of programmers to accomplish great things with their ‘PQ’ (Personal Quomputer?).
+                    For a computer to be truly useful and game changer, it is important to be able to program it. From the first “Hello, Quantum World” (which may be more difficult than it looks like), to Shor’s algorithm, programmers need to be able to express their ideas to the machine. Powerful and diverse programming languages could inspire generation of programmers to accomplish great things with their ‘PQ’ (Personal Quomputer?). The study of Quantum Computing should not only be focused on hardware level<sup>[5]</sup>.
                 </p><br />
+                <p>
                     The first approach to programming may be a precise <b>pseudo-code</b>. It should be clear and intuitive but have a well-defined shared logic that don’t leave room for interpretation.<br/>
-                    The Convention for a Quantum Pseudocode (Knill) written in 1996 stands as a monolith in the field. It reuses classic and expected patterns from classic computing (like if evaluates the ket 1 as true, or the for loops behaves as expected).<br/>
+                    The Convention for a Quantum Pseudocode<sup>[6]</sup> written in 1996 stands as a monolith in the field by being the first solid definition of a pseudocode. It reuses classic and expected patterns from classic computing (like if evaluates the ket 1 as true, or the for loops behaves as expected).<br/>
                     It also achieves the simplification of recurrent operations like the Hadamard operation on a Qubit <i> a </i> or the phase shift using letter and classic function application like <i> H(a) </i> for the application of the Hadamard matrix on the qubit <i> a</i>.<br />
-                    Measurements use simple inverted arrows like <i>a <-- a </i> and functions and methods are qualified by their names.<br />
+                    Measurements use simple inverted arrows like <i>a ← a </i> and functions and methods are qualified by their names.<br />
                     Note how it is therefore possible to write down pseudo code without a powerful text editor.
                 </p><br />
                 <p>
                     Now that code can be expressed formally, programming languages can have precise logical specification. As it’s possible to expect, there exists two types of Quantum Programming Languages (QPL), imperative and functional. There exists already plenty of different QPL even though the need for the moment would be the actual quantum computer. Many QPLs are based from pre-existing programming languages.<br/>
-                    For example Q is an extension of C++, it can therefore use the multiple libraries and makes it easy to reuse chunks of code that nay already exist today. Also, there is no need to start a compiler from scratch, unlike some trials that existed before like Omer’s QCL. However they happen to share some features, the most interesting one could be the representation of the data. The language expect a Quantum heap on to which the Quantum registers would hold a reference to the different qubit that would to stored on it.<br />
-                    Haskell, so loved at Imperial College, also happen to be Quantum ready! There is a Haskell package called QIO that draw the bases of what an implementation of QHaskell would look like. For the most interested, follow this link for an implementation of Shor’s algorithm using QIO package given in the example of the package. More recently, The QPL Quipper developed in the recent years and provides all the tools to expect from a QPL but wrapped up in Haskell’s solid type system and suitable for monadic instructions, making it a very powerful tool for tomorrow’s programmers.<br/>
+                    For example Q<sup>[7]</sup> is an extension of C++, it can therefore use the multiple libraries and makes it easy to reuse chunks of code that nay already exist today. Also, there is no need to start a compiler from scratch, unlike some trials that existed before like Omer’s QCL<sup>[8]</sup>. However they happen to share some features, the most interesting one could be the representation of the data. The language expect a Quantum heap on to which the Quantum registers would hold a reference to the different qubit that would to stored on it.<br />
+                    Haskell, so loved at Imperial College, also happen to be Quantum ready! There is a Haskell package called QIO<sup>[9]</sup> that draw the bases of what an implementation of QHaskell would look like. For the most interested, follow <a href="Shor.hs">this link </a> for an implementation of Shor’s algorithm using QIO package given in the example of the package. More recently, The QPL Quipper developed in the recent years -notably by the same author of the Haskell package- and provides all the tools to expect from a QPL but wrapped up in Haskell’s solid type system and suitable for monadic instructions, making it a very powerful tool for tomorrow’s programmers.<br/>
                 </p>
             </div>
         </div>
