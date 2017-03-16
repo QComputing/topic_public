@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quantum Computing: Physics</title>
+    <title>Physics</title>
     <!--TODO all the metas-->
     <meta name="description" content="A discussion of the physics behind quantum computing and the most popular research paths." />
 
@@ -24,7 +24,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
 
-        <a class="navbar-brand" id="title" href="#"><img id="title_img" src="img/logo.png" alt="LogoQC">Quantum Computing: Implementation</a>
+        <a class="navbar-brand" id="title" href="#"><img id="title_img" src="img/logo.png" alt="LogoQC">Implementation</a>
 
         <ul class="nav navbar-nav navbar-right">
             <li class=""><a href="">Physics</a></li>
@@ -52,80 +52,80 @@
                 <h1 id="article_title">
                     The Physics Of Quantum Computing
 		</h1>
-		
+
 		<p>
-		In the past 10 years substantial work has been made towards 
-		making quantum computers a reality. To achieve this, research 
-		teams across the world have been trying to find the most viable 
-		way of representing qubits, or <i>quantum bits</i>, using 
-		physical phenomena. This is similar to how the binary digits 0 
-		and 1 can be represented in modern semiconductors by 
+		In the past 10 years substantial work has been made towards
+		making quantum computers a reality. To achieve this, research
+		teams across the world have been trying to find the most viable
+		way of representing qubits, or <i>quantum bits</i>, using
+		physical phenomena. This is similar to how the binary digits 0
+		and 1 can be represented in modern semiconductors by
 		electricity either flowing or not flowing through the material.
 		<br />
                 </p>
                 <br />
                 <p>
-		There are several fields of research in attempting to develop a 
-		way of representing qubits. Amongst these, the four most 
-		notable are superconductivity, trapped ions, topological 
-		quantum computers, and quantum optics. Each of these fields has 
-		attracted research teams hopeful that they can develop a way of 
-		using that phenomena to produce a quantum computer, and trying 
-		to produce the hardware needed for these a computer built by 
-		these means. Here we will discuss what some of these 
-		requirements are, the differences between these four main 
-		approaches for representing qubits, and the prospect that each 
+		There are several fields of research in attempting to develop a
+		way of representing qubits. Amongst these, the four most
+		notable are superconductivity, trapped ions, topological
+		quantum computers, and quantum optics. Each of these fields has
+		attracted research teams hopeful that they can develop a way of
+		using that phenomena to produce a quantum computer, and trying
+		to produce the hardware needed for these a computer built by
+		these means. Here we will discuss what some of these
+		requirements are, the differences between these four main
+		approaches for representing qubits, and the prospect that each
 		of them has for being used in future quantum computers.
 		<br />
                 </p>
                 <br />
                 <h2>Superconducting Quantum Computing</h2>
                 <p>
-		Normal conductors are made up of charge carriers that allow 
-		current to flow through the material. In metals charge carriers 
-		are individual electrons. Ultimately no quantum effects are 
+		Normal conductors are made up of charge carriers that allow
+		current to flow through the material. In metals charge carriers
+		are individual electrons. Ultimately no quantum effects are
 		observed because individual electrons interfere with each other.
 		<br />
 		</p>
                 <p>
-                By contrast, charge carriers in superconductors are pairs of 
-		electrons rather than single electrons. The spin of electrons 
-		in these pairs form bosons that form Bose-Einstein Condensates, 
-		a state of matter where bosons can occupy a single quantum 
-		energy level, and so as a result the electron pairs in 
-		superconductors can have their flow described by a probability 
-		amplitude function that can have complex values, while in 
-		normal conductors due to interference quantum effects because 
+                By contrast, charge carriers in superconductors are pairs of
+		electrons rather than single electrons. The spin of electrons
+		in these pairs form bosons that form Bose-Einstein Condensates,
+		a state of matter where bosons can occupy a single quantum
+		energy level, and so as a result the electron pairs in
+		superconductors can have their flow described by a probability
+		amplitude function that can have complex values, while in
+		normal conductors due to interference quantum effects because
 		of this are not observable.
 		<br />
 		</p>
                 <p>
-                Various companies and research teams view superconducting 
-		properties to be the leading method for building and developing 
-		quantum computers. Google,<sup>[1]</sup> IBM,<sup>[2]</sup> and 
-		private research companies Rigetti<sup>[3]</sup> and Quantum 
-		Circuits<sup>[3]</sup> have all placed resources into 
-		developing quantum computers in this way. Through this approach 
-		it has been theoretically suggested that this may enable 
-		quantum error correction on devices that use it. Google’s 
-		superconducting devices have also been successful in showing 
-		the ability to solve special types of quantum problems that 
-		allow them to simulate scenarios such as the interactions 
+                Various companies and research teams view superconducting
+		properties to be the leading method for building and developing
+		quantum computers. Google,<sup>[1]</sup> IBM,<sup>[2]</sup> and
+		private research companies Rigetti<sup>[3]</sup> and Quantum
+		Circuits<sup>[3]</sup> have all placed resources into
+		developing quantum computers in this way. Through this approach
+		it has been theoretically suggested that this may enable
+		quantum error correction on devices that use it. Google’s
+		superconducting devices have also been successful in showing
+		the ability to solve special types of quantum problems that
+		allow them to simulate scenarios such as the interactions
 		between many elections, called <i>non-stoquastic problems.</i>
 		<sup>[1]</sup>
 		<br />
                 </p>
                 <p>
-                One notable challenge to this approach is its requirement for 
-		extremely efficient cooling in order to reach temperatures low 
-		enough for superconductivity to occur. However, with modern 
-		cryogenic technologies such as <i>dilution refrigerators</i>, a 
-		type of refrigerator that uses a mix of <sup>3</sup>He and 
-		<sup>4</sup>He to achieve temperatures as low as a few 
-		millikelvin<sup>[4]</sup>, the temperatures needed to achieve 
-		superconductivity have become realistically achievable. More 
-		problematic than this is that in quantum computers computation 
-		can only be performed while its coherence is maintained, and 
+                One notable challenge to this approach is its requirement for
+		extremely efficient cooling in order to reach temperatures low
+		enough for superconductivity to occur. However, with modern
+		cryogenic technologies such as <i>dilution refrigerators</i>, a
+		type of refrigerator that uses a mix of <sup>3</sup>He and
+		<sup>4</sup>He to achieve temperatures as low as a few
+		millikelvin<sup>[4]</sup>, the temperatures needed to achieve
+		superconductivity have become realistically achievable. More
+		problematic than this is that in quantum computers computation
+		can only be performed while its coherence is maintained, and
 		therefore the decoherence time must be sufficiently long.
 		<sup>[5]</sup>
 		<br />
@@ -136,19 +136,19 @@
 		<figure>
 			<img id="physics_dilution_fridge" src="img/dilution-refrigerator.png">
 			<figcaption>
-				A photo of a dilution fridge being used in a 
+				A photo of a dilution fridge being used in a
 				lab.<sup>[6]</sup>
 			</figcaption>
 		</figure>
 		<br />
-		
+
 		<br />
-		
+
 		<!--Start physics_decoherence_time image-->
 		<figure>
 			<p><img id="physics_decoherence_time" src="img/decoherence-time.jpg">
 			<figcaption>
-				A graph showing the change in maximum 
+				A graph showing the change in maximum
 				achievable decoherence time between 1999-2010.
 				<sup>[5]</sup>
 			</figcaption>
@@ -158,30 +158,30 @@
                 <h2>Ion-Based Quantum Computing</h2>
 
                 <p>
-                    This approach uses charged particles in order to perform 
-		    calculations in quantum time. Trapped ion quantum computers 
-		    are one example of these computers, in which qubits are 
-		    stored within the ions’ electronic states. Lasers allow 
-		    qubits to become entangled with each other, and information 
-		    can be transferred by charge interaction following 
+                    This approach uses charged particles in order to perform
+		    calculations in quantum time. Trapped ion quantum computers
+		    are one example of these computers, in which qubits are
+		    stored within the ions’ electronic states. Lasers allow
+		    qubits to become entangled with each other, and information
+		    can be transferred by charge interaction following
 		    Coulomb’s law.<br />
-                    So far quantum computing operations have been successfully 
-		    performed using trapped ion systems. As a result, they have 
-		    become one of the major areas of research for achieving 
-		    quantum computing, and one of the most promising, where as 
-		    of May 2011 up to 14 trapped ions have been controllably 
+                    So far quantum computing operations have been successfully
+		    performed using trapped ion systems. As a result, they have
+		    become one of the major areas of research for achieving
+		    quantum computing, and one of the most promising, where as
+		    of May 2011 up to 14 trapped ions have been controllably
 		    entangled.<sup>[7]</sup><br />
-		    However, this approach has difficulties with scalability. 
-		    The main problem with scalability lies in performing 
-		    multiple-qubit operations. To do these, ions need to form 
-		    a chain, but as size increases the coupling between each 
-		    ion gets weaker. This causes problems for larger numbers of 
+		    However, this approach has difficulties with scalability.
+		    The main problem with scalability lies in performing
+		    multiple-qubit operations. To do these, ions need to form
+		    a chain, but as size increases the coupling between each
+		    ion gets weaker. This causes problems for larger numbers of
 		    qubits within ion-trap quantum computers.<sup>[8]</sup>
 		    <br />
 		    This approach has proved quite promising from an engineering
-		    perspective, one such example being the milestone of 
-		    successful 14-qubit implementation. Even so, many problems 
-		    remain to be overcome regarding scalability before this 
+		    perspective, one such example being the milestone of
+		    successful 14-qubit implementation. Even so, many problems
+		    remain to be overcome regarding scalability before this
 		    approach can be used more effectively. <br />
 		    For more information, see the
 		    <a href="Logic.html">
@@ -194,33 +194,33 @@
 		<h2>Quantum Optics</h2>
 
                 <p>
-                    Another popular area of research in quantum computing is 
-		    quantum optics, which works using the interaction of light 
-		    with matter. Photons display entanglement, teleportation, 
-		    and can be transformed by quantum logic gates. As each atom 
-		    carries energy according to the formula E = hf (h is the 
-		    Planck constant; f is the photon’s frequency of vibration) 
-		    and light emitted from atoms will only have certain quanta 
-		    of energy, light’s quantum properties allow it to be used 
+                    Another popular area of research in quantum computing is
+		    quantum optics, which works using the interaction of light
+		    with matter. Photons display entanglement, teleportation,
+		    and can be transformed by quantum logic gates. As each atom
+		    carries energy according to the formula E = hf (h is the
+		    Planck constant; f is the photon’s frequency of vibration)
+		    and light emitted from atoms will only have certain quanta
+		    of energy, light’s quantum properties allow it to be used
 		    for building quantum computer hardware.<br />
-		    The major benefit of this approach is that photons are 
-		    largely unaffected by noise, and so are far less severely 
-		    affected by decoherence<sup>[9]</sup>. Because quantum 
-		    calculations can only occur during times of coherence, this 
-		    is a massively important property in quantum optics. 
-		    Furthermore, qubits represented by photons can be 
-		    faithfully transmitted between specified 
+		    The major benefit of this approach is that photons are
+		    largely unaffected by noise, and so are far less severely
+		    affected by decoherence<sup>[9]</sup>. Because quantum
+		    calculations can only occur during times of coherence, this
+		    is a massively important property in quantum optics.
+		    Furthermore, qubits represented by photons can be
+		    faithfully transmitted between specified
 		    locations.<sup>[10]</sup><br />
-		    Despite this, this transmission is only reliable up to 
-		    1 km. Another significant disadvantage is that photons do 
-		    not interact with each other, as is normally needed for a  
+		    Despite this, this transmission is only reliable up to
+		    1 km. Another significant disadvantage is that photons do
+		    not interact with each other, as is normally needed for a
 		    quantum computer.<sup>[11]</sup><br />
-		    Overall, this approach is promising from a theoretical 
-		    perspective, and especially attractive because they are 
-		    so weakly affected by decoherence. But due to the 
-		    significant problem of photons not interacting with each 
-		    other, it may face problems being properly implemented to 
-		    make a quantum computer in future compared to other 
+		    Overall, this approach is promising from a theoretical
+		    perspective, and especially attractive because they are
+		    so weakly affected by decoherence. But due to the
+		    significant problem of photons not interacting with each
+		    other, it may face problems being properly implemented to
+		    make a quantum computer in future compared to other
 		    alternative methods. <br />
                 </p>
 		<br />
@@ -228,27 +228,27 @@
                 <h2>Topological Quantum Computers</h2>
 
                 <p>
-                    Topological quantum computers are a theoretical model for 
-		    developing quantum computers build off anyons, 
-		    2-dimensional particles that have their world lines (a 
+                    Topological quantum computers are a theoretical model for
+		    developing quantum computers build off anyons,
+		    2-dimensional particles that have their world lines (a
 		    particle’s locus through spacetime) intertwine in
-                    3-dimensional space to form what are called braids. In 
-		    topological quantum computers, logic gates are made up by 
+                    3-dimensional space to form what are called braids. In
+		    topological quantum computers, logic gates are made up by
 		    the braids of anyons.<br />
-                    This type of quantum computing is theoretically attractive 
-		    because it has higher stability in having its state changed 
-		    relative to using trapped quantum particles such as 
-		    electrons and photons<sup>[12]</sup>. Operations on braids 
-		    are either performed as changes in the topological phase of 
+                    This type of quantum computing is theoretically attractive
+		    because it has higher stability in having its state changed
+		    relative to using trapped quantum particles such as
+		    electrons and photons<sup>[12]</sup>. Operations on braids
+		    are either performed as changes in the topological phase of
 		    the anions, or as rotation of anions within space.<br />
-                    As of yet, designing real topological computers in practice 
-		    has proved difficult. Although this research has the 
-		    support from Microsoft research teams, research on using 
-		    anions is relatively unexplored compared to other methods 
-		    listed on this page other than from a mostly theoretical 
-		    perspective. This is because as of 2013, non-abelian anyons 
+                    As of yet, designing real topological computers in practice
+		    has proved difficult. Although this research has the
+		    support from Microsoft research teams, research on using
+		    anions is relatively unexplored compared to other methods
+		    listed on this page other than from a mostly theoretical
+		    perspective. This is because as of 2013, non-abelian anyons
 		    had not been experimentally observed. [13]<br />
-		    Below is a video briefly outlining the principles behind 
+		    Below is a video briefly outlining the principles behind
 		    topological quantum computing.<br />
                     <br />
 
