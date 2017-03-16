@@ -1,0 +1,83 @@
+* {
+    font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, fantasy !important;
+    font-size: 16px;
+}
+
+nav {
+    height: 80px;
+}
+
+.nav > li > a {
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+}
+
+.nav > li {
+    padding: 26px 5px 15px 5px;
+}
+
+nav ul li.active > a {
+    background-color: transparent !important;
+    border-bottom-color: #FFFFFF;
+}
+
+.navbar-blue {
+    background-color: transparent;
+}
+
+nav .form-group {
+    margin-left: 20px;
+    margin-top: 22px;
+}
+
+nav .form-group .btn {
+    font-size: 16px !important;
+}
+
+#nav_margin {
+    margin-top: 80px;
+}
+
+#article_title {
+    margin: 45px auto 20px auto
+}
+
+#title_img {
+    display: inline;
+    height: 70px;
+    margin-right: 10px;
+}
+
+#title {
+    color: #FFFFFF;
+}
+
+.physics_header_image {
+    width: 100%;
+    /*z-index=0;*/
+    margin-top: -300px;
+    height: 900px;
+    /*
+    position=fixed;
+     */
+}
+
+#physics_dilution_fridge {
+    width: 100%;
+    height: 500px;
+}
+
+#physics_decoherence_time {
+    width: 100%;
+    height: 450px;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border:  thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
