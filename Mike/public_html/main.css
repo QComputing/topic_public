@@ -1,0 +1,22 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'PT Sans', sans-serif;*/
+}
+
+.topitop {
+    margin: 25px auto 0 auto;
+}
+
+.nav-logo-link-boo :hover{
+    color: transparent;
+}
+
+.nav-logo-link-boo {
+}
+
+.hobbo {
+    margin: 0 20px 0 20px;
+    width:100px;
+    height: 100px;
+    float: left;
+}
