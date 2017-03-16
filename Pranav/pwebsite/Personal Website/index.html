@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h2>Contact</h2>
+    <br />
+    <a href="https://github.com/PK398" class="icon-button github"></a>
+    <a href="https://www.linkedin.com/in/pranav-kalidindi-63b50713a/" class="icon-button linkedin"></a>
+    <a href="mailto:pranavkalidindi@hotmail.com" class="icon-button mail"></a>
+    <a href="CV.pdf" class="icon-button CV"></a>
+  </div>
+</div>
+<div>
+<img class="icon-pic" src="img/profile.jpeg">
+</div>
+  <div class="info" id="hoverElement">
+    <audio id=audio style="visibility:hidden;">
+     <source src="highpitchg.mp3" type='audio/mpeg; codecs="mp3"'>
+    </audio>
+    <script>
+    var hoverArea = document.getElementById('hoverElement');
+    var audio = document.getElementById('audio');
+    hoverArea.onmousemove= function(){
+      audio.play();
+    }
+    hoverArea.onmouseout= function(){
+      audio.pause();
+    }
+    </script>
+    <h1 class="display">Pranav Kalidindi</h1>
+    <p>
+      1<sup><i>st</i></sup> year Joint Maths and Computer Science student at Imperial College London. <br />
+      My interests are Cryptography, Architecture, AI and Quantum Computing.
+    </p>
+  </div>
+  <div class="projects">
+    <h2 class="proj">Projects</h2>
+    <a href="https://github.com/ic-projects/emojifier" class="icon-pro Emojifire"></a>
+    <a href="https://github.com/CyberFirst/TweetBeats" class="icon-pro TweetBeats"></a>
+    <a href="https://github.com/ic-projects/wether" class="icon-pro Ether"></a>
+    <a href="https://github.com/PK398" class="icon-pro speedometer"></a>
+  </div>
+<div class="Ref">
+  <a href="References.pdf">References</a>
+</div>
+
+</body>
+
+
+</html>
